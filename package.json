@@ -1,5 +1,5 @@
 {
-  "name": "smart-ui",
+  "name": "@smart-ui/icons",
   "packageManager": "yarn@1.22.17",
   "version": "0.1.0",
   "description": "Smart UI ICONS Library.",
@@ -18,7 +18,9 @@
   "scripts": {
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx --max-warnings 0 --fix",
     "format": "prettier --write .",
-    "release": "standard-version"
+    "release": "standard-version",
+    "prePublish": "yarn workspace @smart-ui/icons-vue build",
+    "pub": "yarn run prePublish && npm publish -ws --access public"
   },
   "peerDependencies": {
     "vue": ">=3.2.0"
