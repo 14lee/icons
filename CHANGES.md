@@ -1,6 +1,6 @@
 # Smart UI 更新日志
 
-`smart-ui` 遵循 [Semantic Versioning 2.0.0](http://semver.org/lang/zh-CN/) 语义化版本规范。
+`@smart-ui/icons-xx` 遵循 [Semantic Versioning 2.0.0](http://semver.org/lang/zh-CN/) 语义化版本规范。
 
 #### 发布周期
 
@@ -10,8 +10,8 @@
 
 ---
 
-## v1.0.0-alpha.1 `2022-xx-xx`
+## v0.1.0 `2022-01-18`
 
 ### Features
 
-- 组件化框架设计
+- 项目初始化，提供 `@smart-ui/icons-vue` 和 `@smart-ui/icons-svg` 库
