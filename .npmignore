@@ -1,0 +1,11 @@
+
+node_modules
+.*
+*.log
+*-lock.yaml
+*-lock.json
+pnpm-workspace.yaml
+
+!package.json
+!README.md
+!CHANGES.md
