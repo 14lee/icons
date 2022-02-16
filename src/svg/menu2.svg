@@ -1,6 +1,6 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="6.94824" y="13.4658" width="4.57487" height="4.57487" transform="rotate(-180 6.94824 13.4658)" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<rect width="4.57" height="4.57" transform="matrix(-1 0 0 1 6.92316 2.55908)" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<rect width="3.83989" height="3.83989" transform="matrix(-0.697956 -0.71614 -0.71614 0.697956 13.9913 4.66797)" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<rect width="4.57" height="4.57" transform="matrix(1 0 0 -1 9.18927 13.4658)" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25 2.1626C9.86929 2.1626 8.75 3.28189 8.75 4.6626V7.1626H11.25C12.6307 7.1626 13.75 6.04331 13.75 4.6626C13.75 3.28189 12.6307 2.1626 11.25 2.1626ZM9.75 4.6626C9.75 3.83417 10.4216 3.1626 11.25 3.1626C12.0784 3.1626 12.75 3.83417 12.75 4.6626C12.75 5.49102 12.0784 6.1626 11.25 6.1626H9.75V4.6626Z" fill="currentColor"/>
+<path d="M2.25 13.6626H7.25V8.6626H2.25V13.6626ZM6.25 9.6626V12.6626H3.25V9.6626H6.25Z" fill="currentColor"/>
+<path d="M7.25 2.1626H2.25V7.1626H7.25V2.1626ZM6.25 3.1626V6.1626H3.25V3.1626H6.25Z" fill="currentColor"/>
+<path d="M13.75 8.6626V13.6626H8.75V8.6626H13.75ZM9.75 9.6626V12.6626H12.75V9.6626H9.75Z" fill="currentColor"/>
 </svg>
