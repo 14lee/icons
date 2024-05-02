@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { icons } from '@smart-ui/icons-vue/global'
-import iconsJson from '@smart-ui/icons-vue/src/platform-icons.json';
+import { icons } from '@smart-ui/icons-vue/global';
+import iconsJson from '@smart-ui/icons-vue/platform-icons.json';
 
-const platformIcons = [];
-const presetIcons = [];
+const platformIcons: any[] = [];
+const presetIcons: any[] = [];
 
 for (const [key, component] of Object.entries(icons)) {
   if(iconsJson.icons.includes(key)) {
