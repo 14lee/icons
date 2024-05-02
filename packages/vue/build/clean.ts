@@ -1,10 +1,7 @@
 import { pathRoot } from './paths';
-import glob from 'fast-glob'
-import { resolve, basename } from 'node:path'
+import { resolve } from 'node:path'
 import { promises as fs } from 'fs';
 import {
-	SVG,
-	blankIconSet,
 	cleanupSVG,
 	runSVGO,
 	parseColors,

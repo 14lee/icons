@@ -9,19 +9,12 @@ import { writeFile } from 'node:fs/promises'
 
 import camelcase from 'camelcase'
 
-
-/**
- * 1. 创建一个空json文件，如果没有
- * 2. 读取collections文件夹下的所有svg文件
- * 3. 将数组写入json文件
- * 4. 抛出json文件，到打包文件里面。
- */
-
+// 需要创建一个文件夹，放入平台的icons
 const targetPath = resolve(pathRoot, '../platform-icons');
 
-const file = resolve(pathRoot, 'src', 'platform-icons.json');
+const outputFile = resolve(pathRoot, 'platform-icons.json');
 
-await ensureFile(file)
+await ensureFile(outputFile)
   .then(() => {
     console.log('success!')
    })
@@ -30,21 +23,11 @@ await ensureFile(file)
   })
 
 await glob('*.svg', { cwd: targetPath, absolute: true }).then(async files => {
-  // await Promise.all(files.map(async (file) => {
-  //   const newFileName = basename(file).split('.svg')[0].replace('ri:', '');
-  //   rename(file, resolve(targetPath, `${newFileName}.svg`), (err) => {})
-  // }))
-  // await Promise.all(files.map(async (file) => {
-  //   const fileName = basename(file).split('.svg')[0];
-  //   const newFileName = (fileName.charAt(0).toLowerCase() + fileName.slice(1)).replace('_', '-');
-  //   rename(file, resolve(collectPath, `${newFileName}.svg`), (err) => {})
-  // }))
   const fileNameList: string[] = [];
   await Promise.all(files.map((file) => {
     const fileName = basename(file).split('.svg')[0];
     fileNameList.push(camelcase(fileName, { pascalCase: true }));
   }))
-  console.log(fileNameList);
 
   const content = await format(`{
     "icons": ${JSON.stringify(fileNameList)}
@@ -53,5 +36,5 @@ await glob('*.svg', { cwd: targetPath, absolute: true }).then(async files => {
     semi: false,
     singleQuote: true,
   });
-  writeFile(file, content, 'utf-8');
+  writeFile(outputFile, content, 'utf-8');
 })
