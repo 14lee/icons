@@ -1,19 +1,13 @@
 {
   "name": "@smart-ui/icons",
-  "packageManager": "yarn@1.22.17",
+  "packageManager": "pnpm@8.15.4",
+  "type": "module",
   "version": "0.1.0",
   "description": "Smart UI ICONS Library.",
   "author": "South Smart",
   "private": true,
-  "workspaces": [
-    "src/*"
-  ],
   "engines": {
-    "node": ">= 16"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://172.16.11.133/front-end/smartui/icons.git"
+    "node": ">= 18"
   },
   "scripts": {
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx --max-warnings 0 --fix",
@@ -25,14 +19,14 @@
   "peerDependencies": {
     "vue": ">=3.2.0"
   },
-  "dependencies": {},
   "devDependencies": {
+    "@iconify-json/ri": "^1.1.20",
     "@smart/eslint-config-typescript": "^1.1.0",
     "eslint": "^7.32.0",
     "eslint-define-config": "^1.2.0",
     "prettier": "^2.5.1",
     "standard-version": "^9.3.2",
-    "typescript": "4.5.4"
+    "typescript": "^5.4.2"
   },
   "browserslist": [
     "> 1%",
